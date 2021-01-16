@@ -1,0 +1,22 @@
+##Configuracion Basica.
+#Agregar Nombre de Usuario.
+git config --global user.name "nombre"  
+#Agregar correo de Usuario
+git config --global user.email "correo"
+------------------------------------------------------------------
+##Comando para iniciar Git
+git init
+##Comando de Monitoreo de Cambio
+git status
+##Comando para agregar cambios
+git add
+#Variantes:
+   ### Un Archivo Especifico
+	git add Nombre de Archivo
+   ### Varios Archivos 
+	git add Nombre_de_Archivo#1 Nombre_de_Archivo#2
+   ### Todos los Archivos 
+	git add -a
+#Para pasar de Working Area --> Stage Area (Archivos agregados o preparados)
+git commit -m "Un mensaje especifico del cambio que se realizo o lo que se agrego"
+
