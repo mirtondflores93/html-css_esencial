@@ -19,4 +19,45 @@ git add
 	git add -a
 #Para pasar de Working Area --> Stage Area (Archivos agregados o preparados)
 git commit -m "Un mensaje especifico del cambio que se realizo o lo que se agrego"
+#Revisar log de git 
+git log
+#Restablecer a un punto anterior (Viajando en el Tiempo WiiiiiXD)
+git checkout <codigoshaw> al punto al cual regresaremos
+	##Variaciones
+		git checkout master (Nos regresa al commit actual)
+##Borrar commit 
+	git reset <shaw>
+		##Variaciones
+			git reset --soft shaw (Borrar el commit pero mantiene los cambios realizados dentro de el)
+			git reset --hard shaw (!!ALERTA ELIMINA TODO COMMIT Y TODO CAMBIO QUE TIENE DENTRO DE EL.)
 
+-----------------------------------
+##Git Ramas y Fuciones
+	Recuerda que nosotros empezamos en head(Master) en la rama cabezera .
+todos los commit que veamos en git log.
+         Para revisar cuantas ramas cuenta nuestro proyecto:
+	#git branch
+	 Para crear nueva rama, usamos el comando:
+	#git branch <Nombre de la rama.>
+	 Para entrar en esta nueva rama 
+	#git checkout <Nombre de la Rama>
+	 para fucionar las ramas usamos:
+	#git merge <Rama a fucionar>
+	Para su uso correcto primero nos movemos a la rama que va a
+        absorver y usamos el comando antes especificado.	
+	#git branch -D <nombre de la rama>
+	Para Borrar la Rama.		 
+##Repositorios Locales y Remoto
+	#git clone <direccion https / ssh del repositorio> 
+         Nos permite tomar un proyecto que se encuentre en github ya sea 
+nuestro de alguien mas no permite copiarlo localmente
+	#git remote
+	Vincula nuestro proyecto local con nuestro proyecto remoto
+		Como usar:
+		##git remote add origin <link de la rama/repositorio>
+		para ver los enlaces del repositorio
+		##git remote -v
+		para sincronizar los archivos
+		##git push origin <rama>
+		para quitar los enlaces de sincronizacion
+		##git remote remove <nombre del enlace>
